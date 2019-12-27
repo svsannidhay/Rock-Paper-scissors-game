@@ -1,0 +1,81 @@
+header{
+    background-color: white;
+    padding: 1%;
+    margin-top: 0%;
+    margin: auto;
+}
+header > h1{
+    color: #090d11;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+body{
+    background:radial-gradient(rgb(119, 0, 255),rgb(2, 1, 5));
+}
+.score-board {
+    border: 3px solid white;
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 43%;
+    margin-right:43%;
+    font-size: 250%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color:white
+}
+.badge{
+    background-color: rgb(84, 74, 87);
+    color: white;
+    font-size: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.4%;
+}
+#user-label{
+    position: absolute;
+    top: 17%;
+    left: 41%;
+}
+#computer-label{
+    position: absolute;
+    top: 17%;
+    left: 53%;
+}
+.result{
+    font-size: 200%;
+    color:white
+}
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.choices{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.choice {
+    border: 4px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 1%;
+    margin-right:2%;
+    transition: all 0.3s ease;
+
+}
+.choice:hover{
+    cursor: pointer;
+    background: rgb(95, 96, 124);
+}
+#action-message {
+    text-align: center;
+    color: aliceblue;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+ 
