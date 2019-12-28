@@ -20,7 +20,7 @@ function convertToWord(letter){
         case "p":
             return "Paper";
         case "s":
-            return "Scissors";       
+            return "Scissors";        
     }
 }
 function win(userChoice,computerChoice){
@@ -30,6 +30,8 @@ function win(userChoice,computerChoice){
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord} you win! 👑`;
+    document.getElementById(userChoice).classList.add('green-glow');
+    setTimeout(() => document.getElementById(userChoice).classList.remove('green-glow'),500);
 }
 function lose(userChoice,computerChoice){
     computerScore++;
@@ -38,6 +40,8 @@ function lose(userChoice,computerChoice){
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord = "comp".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord} You Lost! 👎🏻`;
+    document.getElementById(userChoice).classList.add('red-glow');
+    setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow'),500);
 }
 function draw(userChoice,computerChoice){
      computerScore_span.innerHTML = computerScore;
@@ -45,6 +49,8 @@ function draw(userChoice,computerChoice){
      const smallUserWord = "user".fontsize(3).sub();
      const smallCompWord = "comp".fontsize(3).sub();
      result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} EQUALS ${convertToWord(computerChoice)}${smallCompWord} DRAW 😃`;
+     document.getElementById(userChoice).classList.add('grey-glow');
+     setTimeout(() => document.getElementById(userChoice).classList.remove('grey-glow'),500);
 }
 function game(userChoice){
     const computerChoice = getCoputerChoice();
